@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="04c85448b489429ca52ed2288809236a" Name="Diagram1">
+        <EntityTypeShape EntityType="M2DbModel.Branch" Width="1.5" PointX="2.75" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="M2DbModel.Company" Width="1.5" PointX="3.375" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="M2DbModel.Contract" Width="1.5" PointX="8.5" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="M2DbModel.Contract_task" Width="1.5" PointX="10.75" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="M2DbModel.Contract_worker" Width="1.5" PointX="11.125" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="M2DbModel.Department" Width="1.5" PointX="13.5" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="M2DbModel.Employee" Width="1.5" PointX="12.125" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="M2DbModel.Office_worker" Width="1.5" PointX="13.25" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="M2DbModel.Project" Width="1.5" PointX="5.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="M2DbModel.Project_status_report" Width="1.5" PointX="8.5" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="M2DbModel.sysdiagram" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="M2DbModel.FK_Branch_To_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="M2DbModel.FK_Project_ToCompany" ManuallyRouted="false" />
+        <AssociationConnector Association="M2DbModel.FK_Contract_task_ToContract" ManuallyRouted="false" />
+        <AssociationConnector Association="M2DbModel.FK_Contract_To_Project" ManuallyRouted="false" />
+        <AssociationConnector Association="M2DbModel.FK_Contract_ToContract_worker" ManuallyRouted="false" />
+        <AssociationConnector Association="M2DbModel.FK_Contract_worker_ToTable" ManuallyRouted="false" />
+        <AssociationConnector Association="M2DbModel.FK_Project_status_report_ToContract_worker" ManuallyRouted="false" />
+        <AssociationConnector Association="M2DbModel.FK_Office_worker_ToDepartment" ManuallyRouted="false" />
+        <AssociationConnector Association="M2DbModel.FK_Office_worker_ToEmployee" ManuallyRouted="false" />
+        <AssociationConnector Association="M2DbModel.FK_Project_status_report_ToProject" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
